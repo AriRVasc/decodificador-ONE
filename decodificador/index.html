@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio ONE</title>
+</head>
+<body>
+    <header>
+        <h1>Decodificador</h1>
+    </header>
+    <main>
+        <form>
+            <div class="text__box">
+                <label for="texto-input">Digite seu texto:</label>
+                <textarea id="texto-input" maxlength="1500" spellcheck="false" placeholder="Insira apenas letras minúsculas e sem acento..." autocomplete="off" required></textarea>
+                <span id="error-message" class="error"></span>
+            </div>
+            <div class="btn__crip">
+                <button type="button" id="criptografar">Criptografar</button>
+                <button type="button" id="descriptografar">Descriptografar</button>
+            </div>
+        </form>
+
+        <div class="text__result">
+            <textarea id="resultado" disabled></textarea>
+            <button id="copiar">Copiar</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Ari Vasconcelos - 2024 Projeto Decodificador</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
